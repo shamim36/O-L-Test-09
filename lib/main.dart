@@ -60,6 +60,9 @@ class _ButtonColorChangeScreenState extends State<ButtonColorChangeScreen> {
                 return handleButtonTap(size);
               },
               style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
                 backgroundColor:
                     size == selectedSize ? Colors.amber : Colors.grey,
               ),
